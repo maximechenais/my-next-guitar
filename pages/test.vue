@@ -27,12 +27,10 @@ export default {
 </script>
 
 <style scoped>
-	* {
-		margin: 0
-	}
+	
 	.main-container {
-		display: flex;
-		justify-content: center;
+		background: red;
+		width: 440px;
 	}
 
 </style>
