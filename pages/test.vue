@@ -1,36 +1,34 @@
 <template>
-  <div class="main-container">
+	<div class="main-container">
 
-	  <div class="filter-cart-container">
+		<input-select
 
-		  <div>filters</div>
+		/>
 
-		  <div>cart</div>
-
-	  </div>
-
-	  <div class="search-result-container">
-
-		  <div>search bar</div>
-
-		  <div>results</div>
-
-	  </div>
-
-    
-  </div>
+	</div>
 </template>
 
 <script>
-export default {
-}
+	import inputSelect from '@/components/input/input-select'
+import InputSelect from '../components/input/input-select.vue'
+	export default {
+		components: {
+			inputSelect,
+		},
+	
+		data() {
+			return {
+				option: {
+					text: {
+						
+					}
+				}
+			}
+		}
+	}
 </script>
 
 <style scoped>
 	
-	.main-container {
-		background: red;
-		width: 440px;
-	}
 
 </style>
