@@ -4,11 +4,8 @@
 
 		<select>
 
-			<option value="" 
-				v-for="{option, index} in options" 
-				:key="index"
+			<option 
 			>
-				{{ option.text }}
 			</option>
 
 		</select>
@@ -16,19 +13,17 @@
 </template>
 
 <script>
-	export default {
-		name: 'inputSelect',
+    export default {
+        name: 'inputSelect',
 
-		props: {
-			
-			label: String,
+        props: {
 
-			options: {
-				text: String,
-			}
-		}
+            label: String,
 
-	}
+            brandList: Object,
+        }
+
+    }
 </script>
 
 <style scoped>
